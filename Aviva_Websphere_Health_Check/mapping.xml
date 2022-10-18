@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapping SYSTEM "file://bladelogic.com/dtds/Import-Mapping.dtd">
+<mapping>
+    <property_mapping>
+        <property_set_class>Component.CIS - Windows Server 2016</property_set_class>
+        <source_property>VAR_GPO_LIST</source_property>
+        <!--This is the name of the property on the importing system to use-->
+        <target_property>VAR_GPO_LIST</target_property>
+    </property_mapping>
+    <property_mapping>
+        <property_set_class>Depot Object</property_set_class>
+        <source_property>_CUSTOMER</source_property>
+        <!--This is the name of the property on the importing system to use-->
+        <target_property>_CUSTOMER</target_property>
+    </property_mapping>
+    <property_mapping>
+        <property_set_class>Job</property_set_class>
+        <source_property>_CUSTOMER</source_property>
+        <!--This is the name of the property on the importing system to use-->
+        <target_property>_CUSTOMER</target_property>
+    </property_mapping>
+    <property_mapping>
+        <property_set_class>Server</property_set_class>
+        <source_property>NOT_REVIEWED</source_property>
+        <!--This is the name of the property on the importing system to use-->
+        <target_property>NOT_REVIEWED</target_property>
+    </property_mapping>
+    <grouped_object_mapping>
+        <source_object>
+            <object_type>NSHSCRIPT</object_type>
+            <object_name>Websphere_Health_Check_Script</object_name>
+            <group_id>2089011</group_id>
+        </source_object>
+        <!--This is the path to the group into which the object will be imported-->
+        <containing_group>/AVIVA/Workspace/Websphere</containing_group>
+    </grouped_object_mapping>
+    <grouped_object_mapping>
+        <source_object>
+            <object_type>NSH_SCRIPT_JOB</object_type>
+            <object_name>Aviva_Websphere_Health_Check</object_name>
+            <group_id>2089012</group_id>
+        </source_object>
+        <!--This is the path to the group into which the object will be imported-->
+        <containing_group>/AVIVA/Workspace/Websphere</containing_group>
+    </grouped_object_mapping>
+</mapping>
